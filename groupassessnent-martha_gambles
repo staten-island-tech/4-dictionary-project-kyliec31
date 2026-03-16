@@ -1,9 +1,12 @@
 def gamble(quarter, machine_1, machine_2, machine_3):
     quarter = 0
     m1 = machine_1
+    m2 = machine_2
+    m3 = machine_3
+ 
     turns = []
 
-while quarter > 0:
+    while quarter >= 1:
         if m1 % 35 == 0:
             quarter += 29
             turns +=1
@@ -11,22 +14,21 @@ while quarter > 0:
             quarter != 1
             turns += 1
 
-while quarter > 0:
-    if machine_2 % 100 == 0:
-        quarter += 59
-        turns += 1
-    else:
-        quarter != 1
-        turns += 1
+        if m2 % 100 == 0:
+            quarter += 59
+            turns += 1
+        else:
+            quarter != 1
+            turns += 1
 
-while quarter > 0:
-    if machine_3 % 10 == 0:
-        quarter += 8
-        turns += 1
-    else:
-        quarter != 1
-        turns += 1
+        if m3 % 10 == 0:
+            quarter += 8
+            turns += 1
+        else:
+            quarter != 1
+            turns += 1
+        
         print(turns)
 
-gamble(48, 3, 10, 4)
-print(f"Martha plays [] times before going broke.")
+    gamble(48,[3, 10, 4])
+    print(f"Martha plays {turns} times before going broke.")

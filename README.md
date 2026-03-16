@@ -1,4 +1,7 @@
     python
 item {
-    "name" 
+    "name": "
+    "price":
+    "department":
+    "description":
 }
