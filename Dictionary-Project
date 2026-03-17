@@ -1,0 +1,23 @@
+item = [ 
+{    
+    "name": "Vivitar VECXX101 4K Digital Camera",
+    "price": 99.99,
+    "department": "Camera",
+    "description": "Take picture."
+},
+{
+    "name":"nhfefheshfjef",
+    "price": 
+    "department": 
+    "description": 
+},
+{
+    "name": "",
+    "price": ,
+    "department": "",
+    "description": "."
+}
+]
+
+for index, item in enumerate(best_buy_items):
+    print(index, ":", item["name"])
