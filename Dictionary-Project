@@ -1,5 +1,5 @@
 item = [ 
-{    
+{   
     "name": "Vivitar VECXX101 4K Digital Camera",
     "price": 99.99,
     "department": "Camera",
@@ -7,15 +7,15 @@ item = [
 },
 {
     "name":"nhfefheshfjef",
-    "price": 
-    "department": 
-    "description": 
+    "price": 78.99
+    "department": "soeegr",
+    "description": "rgh rg  re."
 },
 {
-    "name": "",
-    "price": ,
-    "department": "",
-    "description": "."
+    "name": "erje",
+    "price": 67.98,
+    "department": "43645",
+    "description": "retr."
 }
 ]
 
