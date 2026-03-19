@@ -1,23 +1,32 @@
+
 item = [ 
 {   
     "name": "Vivitar VECXX101 4K Digital Camera",
     "price": 99.99,
-    "department": "Camera",
-    "description": "Take picture."
+    "department": "camera",
+    "description": "Take picture."  
 },
 {
-    "name":"nhfefheshfjef",
-    "price": 78.99
-    "department": "soeegr",
-    "description": "rgh rg  re."
+    "name":"HP 14' Intel Processor N150 2025 Laptop",
+    "price": 179.99
+    "department": "laptop",
+    "description": "Type."
 },
 {
-    "name": "erje",
-    "price": 67.98,
-    "department": "43645",
-    "description": "retr."
+    "name": "Apple iPad Air 11-inch",
+    "price": 549.00,
+    "department": "iPad",
+    "description": "Press."
+}
+{    "name": "AirPods 4 Apple",
+    "price": 129.00,
+    "department": "AirPods",
+    "description": "Listen."
 }
 ]
 
-for index, item in enumerate(best_buy_items):
+for index, item in enumerate(item):
     print(index, ":", item["name"])
+
+print(input("Select item # to purchase: "))
+    if
