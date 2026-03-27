@@ -28,6 +28,7 @@ items = [
 cart = []
 prices = []
 cost = 0
+shop = 0
 def show_items(items):
     for index, items in enumerate(items):
         print(index, ":", items["name"])
@@ -35,3 +36,7 @@ def show_items(items):
 show_items(items)
 ask = int(input("Select item # to purchase: "))
 print(items[ask])
+
+ask = int(input("Would you like to continue shopping?: "))
+
+while shop == 0:
