@@ -6,7 +6,9 @@ wards = {
 }
 
 staff = {}
-for ward, staff in wards.items():
-    
-    print(ward,staff)
-
+for dept, docs in wards.items():
+    for doc in docs:
+        if doc not in staff:
+            staff[doc] = []
+        staff[doc].append(dept)
+print(staff['Bob'])
