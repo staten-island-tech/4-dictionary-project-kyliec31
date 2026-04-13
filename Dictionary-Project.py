@@ -32,11 +32,19 @@ shop = 0
 def show_items(items):
     for index, items in enumerate(items):
         print(index, ":", items["name"])
-
 show_items(items)
-ask = int(input("Select item # to purchase: "))
-print(items[ask])
 
-ask = int(input("Would you like to continue shopping?: "))
+""" ask = int(input("Select item # to purchase: "))
+print(items[ask]) """
 
 while shop == 0:
+    ask = int(input(" Select item # to purchase: "))
+    cart.append(items[ask]["name"])
+    print(items[ask])
+
+    shop = (input("Would you like to continue shopping?: "))
+    while shop != "done":
+        ask = int(input("Select item # to purchase: (type 'done' to finish): "))
+        cart.append(items[ask]["name"])
+        cart.append(items[ask][""])
+    print(items[ask])
