@@ -38,16 +38,17 @@ show_items(items)
 print(items[ask]) """
 
 while True:
-    ask = int(input("Select item # to purchase: (type 'done' to finish): "))
-    if ask == "done":
-        break
-    ask = int(ask)
-
-    cart.append(items[ask])
-    total += items[ask]["price"]
+    ask = int(input("Select item # to purchase:"))
+    cart.append(items[ask]["name"])
     print("In cart: ", items[ask]["name"])
+    prices.append(items[ask]["price"])
+    continue_shopping = input("Continue shopping?(type 'done' to finish)")
+    if continue_shopping == "done":
+        break
+"""     ask = int(ask) """
 
 print("Items purchased: ")
+total += items[ask]["price"]
 for item in cart:
-    print(item["name"])
+    print(cart)
 print("Total: $", total)
