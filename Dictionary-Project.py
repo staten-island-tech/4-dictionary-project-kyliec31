@@ -45,10 +45,8 @@ while True:
     continue_shopping = input("Continue shopping? (type 'done' to finish): ")
     if continue_shopping == "done":
         break
-"""     ask = int(ask) """
 
 print("Items purchased: ")
 total += items[ask]["price"]
-for item in cart:
-    print(cart)
-print("Total: $", total)
+for items in cart:
+    print("Total: $", total)
