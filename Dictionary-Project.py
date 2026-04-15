@@ -46,7 +46,8 @@ while True:
     if continue_shopping == "done":
         break
 
-print("Items purchased: ")
 total += items[ask]["price"]
+print("Items purchased: ")
+print(cart)
 for items in cart:
     print("Total: $", total)
