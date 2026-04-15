@@ -42,7 +42,7 @@ while True:
     cart.append(items[ask]["name"])
     print("In cart: ", items[ask]["name"])
     prices.append(items[ask]["price"])
-    continue_shopping = input("Continue shopping?(type 'done' to finish)")
+    continue_shopping = input("Continue shopping? (type 'done' to finish): ")
     if continue_shopping == "done":
         break
 """     ask = int(ask) """
